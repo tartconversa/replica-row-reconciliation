@@ -1,0 +1,29 @@
+{
+  "primary_available": [
+    7
+  ],
+  "replica_available": [
+    7
+  ],
+  "replica_offset": {
+    "east": 7,
+    "north": 7
+  },
+  "district": {
+    "01": "east",
+    "02": "north"
+  },
+  "state": {
+    "1": "enrolled",
+    "2": "waiting"
+  },
+  "column_pairs": {
+    "lesson": [
+      "district:dept",
+      "title:label"
+    ],
+    "reg": [
+      "state:status"
+    ]
+  }
+}

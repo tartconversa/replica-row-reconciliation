@@ -1,0 +1,23 @@
+{
+  "databases": {
+    "primary": {
+      "file": "primary.sql",
+      "rows": {
+        "primary_lesson": 2,
+        "primary_reg": 2
+      }
+    },
+    "replica": {
+      "file": "replica.sql",
+      "rows": {
+        "replica_lesson": 1,
+        "replica_reg": 1
+      }
+    }
+  },
+  "events": 4,
+  "documents": [
+    "checkpoint.json"
+  ],
+  "settings": {}
+}

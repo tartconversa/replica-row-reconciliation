@@ -1,0 +1,85 @@
+[
+  {
+    "pos": 30,
+    "kind": "inspect",
+    "range": "east",
+    "commit_pos": 12,
+    "compare_id": "east-12"
+  },
+  {
+    "pos": 31,
+    "kind": "inspect",
+    "range": "west",
+    "commit_pos": 12,
+    "compare_id": "west-12"
+  },
+  {
+    "pos": 31,
+    "kind": "inspect",
+    "range": "south",
+    "commit_pos": 12,
+    "compare_id": "south-12"
+  },
+  {
+    "pos": 32,
+    "kind": "read",
+    "area": "north",
+    "min_pos": 12
+  },
+  {
+    "pos": 33,
+    "kind": "plan",
+    "compare_id": "east-12",
+    "repair_id": "K13"
+  },
+  {
+    "pos": 34,
+    "kind": "commit",
+    "commit_pos": 13,
+    "tx": "m13",
+    "rows": [
+      [
+        "lesson",
+        "E1",
+        "east",
+        "数控机床",
+        13
+      ],
+      [
+        "reg",
+        "r2",
+        "E1",
+        "enrolled",
+        13
+      ]
+    ]
+  },
+  {
+    "pos": 35,
+    "kind": "replicate",
+    "commit_pos": 13,
+    "range": "east",
+    "tx": "m13"
+  },
+  {
+    "pos": 36,
+    "kind": "repair",
+    "repair_id": "K13"
+  },
+  {
+    "pos": 37,
+    "kind": "restart",
+    "node": "replica"
+  },
+  {
+    "pos": 38,
+    "kind": "repair",
+    "repair_id": "K13"
+  },
+  {
+    "pos": 39,
+    "kind": "read",
+    "area": "east",
+    "min_pos": 13
+  }
+]

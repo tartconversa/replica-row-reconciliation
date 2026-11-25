@@ -1,0 +1,13 @@
+BEGIN TRANSACTION;
+CREATE TABLE "replica_lesson" (id TEXT PRIMARY KEY, dept TEXT, label TEXT, row_pos INTEGER);
+INSERT INTO "replica_lesson" VALUES('E1','01','机床',10);
+INSERT INTO "replica_lesson" VALUES('E2','01','工装',9);
+INSERT INTO "replica_lesson" VALUES('N1','02','焊接',12);
+INSERT INTO "replica_lesson" VALUES('W1','03','仓管',10);
+INSERT INTO "replica_lesson" VALUES('S1','04','物流',11);
+CREATE TABLE "replica_reg" (id TEXT PRIMARY KEY, lesson TEXT, status INTEGER, row_pos INTEGER);
+INSERT INTO "replica_reg" VALUES('r1','E1',2,10);
+INSERT INTO "replica_reg" VALUES('old','E9',2,10);
+INSERT INTO "replica_reg" VALUES('r3','E2',1,9);
+INSERT INTO "replica_reg" VALUES('r4','N1',2,12);
+COMMIT;

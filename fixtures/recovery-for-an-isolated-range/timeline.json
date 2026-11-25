@@ -1,0 +1,27 @@
+[
+  {
+    "pos": 8,
+    "kind": "inspect",
+    "range": "east",
+    "commit_pos": 7,
+    "compare_id": "e7"
+  },
+  {
+    "pos": 9,
+    "kind": "repair",
+    "repair_id": "R7",
+    "compare_id": "e7"
+  },
+  {
+    "pos": 10,
+    "kind": "read",
+    "area": "east",
+    "min_pos": 7
+  },
+  {
+    "pos": 11,
+    "kind": "read",
+    "area": "north",
+    "min_pos": 7
+  }
+]

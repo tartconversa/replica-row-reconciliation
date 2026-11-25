@@ -1,0 +1,13 @@
+BEGIN TRANSACTION;
+CREATE TABLE "primary_lesson" (id TEXT PRIMARY KEY, district TEXT, title TEXT, row_pos INTEGER);
+INSERT INTO "primary_lesson" VALUES('E1','east','机床',10);
+INSERT INTO "primary_lesson" VALUES('E2','east','工装',9);
+INSERT INTO "primary_lesson" VALUES('N1','north','焊接',12);
+INSERT INTO "primary_lesson" VALUES('W1','west','仓管',12);
+INSERT INTO "primary_lesson" VALUES('S1','south','物流',12);
+CREATE TABLE "primary_reg" (id TEXT PRIMARY KEY, lesson TEXT, state TEXT, row_pos INTEGER);
+INSERT INTO "primary_reg" VALUES('r1','E1','enrolled',10);
+INSERT INTO "primary_reg" VALUES('r2','E1','waiting',11);
+INSERT INTO "primary_reg" VALUES('r3','E2','enrolled',9);
+INSERT INTO "primary_reg" VALUES('r4','N1','waiting',12);
+COMMIT;
